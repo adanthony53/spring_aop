@@ -1,7 +1,10 @@
 package com.spring_aop.utils.impl;
 
 import com.spring_aop.utils.Calculator;
+import org.springframework.stereotype.Component;
 
+//@Component("name") and call applicationContext.getBean("name") in Main
+@Component
 public class CalImpl implements Calculator {
     @Override
     public int add(int a, int b) {
